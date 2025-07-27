@@ -136,9 +136,9 @@
 
         quick_layer {
             bindings = <
-&trans      &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp K_PREV       &kp K_PLAY_PAUSE  &kp K_NEXT           &kp C_VOL_DN         &kp K_MUTE               &kp C_VOLUME_UP  &kp RG(D)      &kp RG(LEFT_BRACKET)      &kp RG(RIGHT_BRACKET)
+&trans      &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp K_PREV       &kp K_PLAY_PAUSE  &kp K_NEXT           &kp C_VOL_DN         &kp K_MUTE               &kp C_VOLUME_UP  &kp RG(RS(L))  &kp RG(LEFT_BRACKET)      &kp RG(RIGHT_BRACKET)
 &mo 3       &kp LEFT_CONTROL      &kp LEFT_SHIFT        &kp LEFT_ALT     &kp LEFT_GUI      &kp LA(LC(ENTER))    &kp RA(RC(LEFT))     &kp RA(RC(RIGHT_ARROW))  &kp UP_ARROW     &kp RG(RC(G))  &kp RG(RS(LEFT_BRACKET))  &kp RG(RS(RIGHT_BRACKET))
-&caps_word  &rgb_ug RGB_TOG       &rgb_ug RGB_EFR       &rgb_ug RGB_EFF  &rgb_ug RGB_BRD   &rgb_ug RGB_BRI      &kp RG(RS(L))        &kp LEFT                 &kp DOWN         &kp RIGHT      &kp RC(MINUS)             &kp RC(RS(MINUS))
+&caps_word  &rgb_ug RGB_TOG       &rgb_ug RGB_EFR       &rgb_ug RGB_EFF  &rgb_ug RGB_BRD   &rgb_ug RGB_BRI      &kp RIGHT_ALT        &kp LEFT                 &kp DOWN         &kp RIGHT      &kp RC(MINUS)             &kp RC(RS(MINUS))
                                                         &trans           &trans            &layer_tap_hold 1 1  &layer_tap_hold 2 2  &trans                   &trans
             >;
 
