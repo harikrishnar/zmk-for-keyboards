@@ -115,8 +115,8 @@
         base_layer {
             bindings = <
 &kp TAB    &kp Q                 &kp W               &kp E             &kp R             &kp T                &kp Y                &kp U              &kp I              &kp O                &kp P                          &kp RA(BSPC)
-&kp ESC    &hm_l LEFT_CONTROL A  &hm_l LEFT_SHIFT S  &hm_l LEFT_ALT D  &hm_l LEFT_GUI F  &kp G                &kp H                &hm_r RIGHT_GUI J  &hm_r RIGHT_ALT K  &hm_r RIGHT_SHIFT L  &hm_r RIGHT_CONTROL SEMICOLON  &kp SQT
-&kp LSHFT  &kp Z                 &kp X               &kp C             &kp V             &kp B                &kp N                &kp M              &kp COMMA          &kp DOT              &kp FSLH                       &mt RA(RC(RIGHT_SHIFT)) DELETE
+&kp ESC    &hm_l LEFT_CONTROL A  &hm_l LEFT_SHIFT S  &hm_l LEFT_ALT D  &hm_l LEFT_GUI F  &kp G                &kp H                &hm_r RIGHT_GUI J  &hm_r RIGHT_ALT K  &hm_r RIGHT_SHIFT L  &hm_r RIGHT_CONTROL SEMICOLON  &mt RA(RS(RIGHT_SHIFT)) SQT
+&kp LSHFT  &kp Z                 &kp X               &kp C             &kp V             &kp B                &kp N                &kp M              &kp COMMA          &kp DOT              &kp FSLH                       &mt RIGHT_SHIFT DELETE
                                                      &mt LEFT_GUI TAB  &kp ENTER         &layer_tap_hold 1 1  &layer_tap_hold 1 1  &kp SPACE          &kp BACKSPACE
             >;
 
@@ -125,10 +125,10 @@
 
         num_layer {
             bindings = <
-&trans  &kp N1            &kp N2          &kp N3                &kp N4                 &kp N5                  &kp N6               &kp N7          &kp N8          &kp N9            &kp N0             &trans
-&mo 3   &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp LEFT_ALT          &kp LEFT_GUI           &kp GRAVE               &kp MINUS            &kp EQUAL       &kp UP_ARROW    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &layer_tap_hold 2 2
-&trans  &kp LEFT_ALT      &kp LG(GRAVE)   &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp LS(LG(NUMBER_2))    &kp BACKSLASH        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT         &kp RIGHT_ALT      &trans
-                                          &kp LEFT_GUI          &trans                 &layer_tap_hold 1 1     &layer_tap_hold 1 1  &trans          &trans
+&trans  &kp N1            &kp N2          &kp N3                &kp N4                 &kp N5                &kp N6               &kp N7          &kp N8          &kp N9            &kp N0             &trans
+&mo 3   &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp LEFT_ALT          &kp LEFT_GUI           &kp GRAVE             &kp MINUS            &kp EQUAL       &kp UP_ARROW    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &layer_tap_hold 2 2
+&trans  &kp LEFT_ALT      &kp LG(GRAVE)   &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp LS(LG(NUMBER_2))  &kp BACKSLASH        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT         &kp RIGHT_ALT      &trans
+                                          &kp LEFT_GUI          &trans                 &layer_tap_hold 1 1   &layer_tap_hold 1 1  &trans          &trans
             >;
 
             label = "NUM";
@@ -136,10 +136,10 @@
 
         quick_layer {
             bindings = <
-&trans      &none             &none           &none         &none         &none     &kp K_PLAY_PAUSE   &none                    &kp C_VOLUME_UP  &kp C_BRIGHTNESS_INC  &kp RG(MINUS)  &kp RG(EQUAL)
-&mo 3       &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_GUI  &none     &kp RA(RC(LEFT))   &kp RA(RC(RIGHT_ARROW))  &kp C_VOL_DN     &kp C_BRIGHTNESS_DEC  &none          &kp RC(MINUS)
-&caps_word  &trans            &trans          &trans        &trans        &trans    &kp RA(RC(ENTER))  &kp K_MUTE               &kp K_PREV       &kp K_NEXT            &trans         &trans
-                                              &kp LEFT_GUI  &trans        &to 0     &to 0              &trans                   &trans
+&trans      &none             &none           &none         &none         &none   &kp K_PLAY_PAUSE   &none                    &kp C_VOLUME_UP  &kp C_BRIGHTNESS_INC  &kp RG(MINUS)  &kp RG(EQUAL)
+&mo 3       &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_GUI  &none   &kp RA(RC(LEFT))   &kp RA(RC(RIGHT_ARROW))  &kp C_VOL_DN     &kp C_BRIGHTNESS_DEC  &none          &kp RC(MINUS)
+&caps_word  &trans            &trans          &trans        &trans        &trans  &kp RA(RC(ENTER))  &kp K_MUTE               &kp K_PREV       &kp K_NEXT            &trans         &trans
+                                              &kp LEFT_GUI  &trans        &to 0   &to 0              &trans                   &trans
             >;
 
             label = "QUICK";
