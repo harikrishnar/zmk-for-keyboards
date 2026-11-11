@@ -10,13 +10,15 @@ manifest:
       url-base: https://github.com/M165437
     - name: infely
       url-base: https://github.com/infely
+    - name: harikrishnar
+      url-base: https://github.com/harikrishnar
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: v0.3
       import: app/west.yml
     - name: zmk-nice-oled
-      remote: mctechnology17
-      revision: v0.3/dev
+      remote: harikrishnar
+      revision: hari-v0.3
   self:
     path: config
